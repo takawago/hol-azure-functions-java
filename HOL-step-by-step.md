@@ -92,8 +92,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 - Select a location for new resources (新しいリソースの場所 (リージョン) を選択してください) : パフォーマンスを向上させるために、お近くの[リージョン](https://azure.microsoft.com/regions/) を選択してください。
 
 この拡張機能は、Azure に作成されている個々のリソースの状態を通知領域に表示します。
-
-    ![resource-notification.png](images/resource-notification.png)
+![resource-notification.png](images/resource-notification.png)
 
 3. 完了すると、関数アプリ名に基づく名前を使用して、次の Azure リソースがサブスクリプションに作成されます。
 - リソース グループ。関連リソースの論理コンテナーです。

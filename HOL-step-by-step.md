@@ -52,10 +52,10 @@ Visual Studio Code を [Azure Functions Core Tools](https://docs.microsoft.com/j
 ![functions-vscode-f5.png](images/functions-vscode-f5.png "functions-vscode-f5.png")
 Windows での実行に問題がある場合、Visual Studio Code の既定のターミナルが WSL Bash に設定されていないことをご確認ください。
 
-2. Core Tools を実行したまま、**Azure: Functions** 領域に移動します。 [Functions] の [ローカル プロジェクト][Functions] を展開します。  関数を右クリック (Windows) または Ctrl キーを押しながらクリック (macOS) して、[Execute Function Now](今すぐ関数を実行) を選択します。
+2. Core Tools を実行したまま、**Azure: Functions** 領域に移動します。 [Functions] の [ローカル プロジェクト][Functions] を展開します。  関数を右クリック (Windows) または Ctrl キーを押しながらクリック (macOS) して、**[Execute Function Now]** (今すぐ関数を実行) を選択します。
 ![execute-function-now.png](images/execute-function-now.png)
 
-3. [Enter request body](要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
+3. **[Enter request body]** (要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
 
 4. ローカルで関数を実行し、応答が返されると、Visual Studio Code で通知が発生します。 関数の実行に関する情報は、 [ターミナル] パネルに表示されます。
 
@@ -79,7 +79,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 
 **重要**: 既存の関数アプリに発行すると、Azure のそのアプリのコンテンツが上書きされます
 
-1. アクティビティ バーの Azure アイコンを選択し、 [Azure: Functions] 領域で、 [Deploy to function app](関数アプリにデプロイ) ボタンを選択します。
+1. アクティビティ バーの Azure アイコンを選択し、 [Azure: Functions] 領域で、 **[Deploy to function app]** (関数アプリにデプロイ) ボタンを選択します。
 ![function-app-publish-project.png](images/function-app-publish-project.png)
 
 2. プロンプトで、次の情報を入力します。
@@ -103,7 +103,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 
 **ヒント**: 既定では、関数アプリに必要な Azure リソースが、指定した関数アプリ名に基づいて作成されます。 また、既定では、関数アプリを含んだ同じ新しいリソース グループがその作成先となります。 それらのリソースの名前をカスタマイズしたり、既存のリソースを再利用したりする場合は、高度な作成オプションを使用してプロジェクトを発行する必要があります。
 
-4. この通知の [View Output](出力の表示) を選択すると、作成済みの Azure リソースなど、作成とデプロイの結果が表示されます。 通知を見逃した場合は、右下隅にあるベル アイコンを選択して、再度確認します。
+4. この通知の **[View Output]** (出力の表示) を選択すると、作成済みの Azure リソースなど、作成とデプロイの結果が表示されます。 通知を見逃した場合は、右下隅にあるベル アイコンを選択して、再度確認します。
 ![function-create-notifications.png](images/function-create-notifications.png)
 
 
@@ -111,7 +111,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 1. [Azure: Functions] 領域 (サイド バー内) に戻り、サブスクリプション、新しい関数アプリ、 [関数] の順に展開します。  関数を右クリック (Windows) または Ctrl キーを押しながらクリック (macOS) して、**[Execute Function Now]** **(今すぐ関数を実行)** を選択します。
 ![execute-function-now (1).png](images/execute-function-now%20(1).png)
 
-2. [Enter request body](要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
+2. **[Enter request body]** (要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
 
 3. Azure で関数を実行し、応答が返されると、Visual Studio Code で通知が発生します。
 

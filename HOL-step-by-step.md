@@ -27,12 +27,13 @@
 このセクションでは、Visual Studio Code を使用して、ローカル Azure Functions プロジェクトを Java で作成します。 後からこの記事の中で、関数コードを Azure に発行します。
 
 1. アクティビティ バーの Azure アイコンを選択し、 [Azure: Functions] 領域で [新しいプロジェクトの作成] アイコンを選択します。
-![create-new-project](images/create-new-project.png "create-new-project.png")
 
-2. プロジェクト ワークスペースのディレクトリの場所を選択し、 **[選択]** をクリックします。
+    ![create-new-project](images/create-new-project.png "create-new-project.png")
+
+1. プロジェクト ワークスペースのディレクトリの場所を選択し、 **[選択]** をクリックします。
    - 注意: これらの手順は、ワークスペースの外部で実行するように設計されています。 ここでは、ワークスペースに含まれるプロジェクト フォルダーは選択しないでください。
 
-3. プロンプトで、次の情報を入力します。
+2. プロンプトで、次の情報を入力します。
    -  Select a language for your function project (関数プロジェクトの言語を選択してください): [`Java`] を選択します。
    -  Select a version of Java (Java のバージョンを選択してください): 関数が Azure で実行される Java バージョン [`Java 11`] または [`Java 8`] を選択します。 ローカルで確認済みの Java バージョンを選択してください。
    -  Provide a group ID (グループ ID を指定してください): [`com.function`] を選択します。
@@ -43,17 +44,17 @@
    -  [承認レベル]: [Anonymous] を選択します。この場合、すべてのユーザーが関数のエンドポイントを呼び出すことができます。 承認レベルについては、「承認キー」を参照してください。
    -  Select how you would like to open your project (プロジェクトを開く方法を選択してください): **[`Add to workspace`]** を選択します。
 
-4. Visual Studio Code は、この情報を使用して、HTTP トリガーによる Azure Functions プロジェクトを生成します。 ローカル プロジェクト ファイルは、エクスプローラーで表示できます。 作成されるファイルの詳細については、「生成されるプロジェクト ファイル」を参照してください。
+3. Visual Studio Code は、この情報を使用して、HTTP トリガーによる Azure Functions プロジェクトを生成します。 ローカル プロジェクト ファイルは、エクスプローラーで表示できます。 作成されるファイルの詳細については、「生成されるプロジェクト ファイル」を参照してください。
 
 # 関数をローカルで実行する
 Visual Studio Code を [Azure Functions Core Tools](https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-run-local) と統合することで、このプロジェクトをローカルの開発用コンピューター上で実行してから、Azure に発行することができます。
 
 1. 関数を呼び出すには、F5 キーを押して関数アプリ プロジェクトを起動します。 Core Tools からの出力がターミナル パネルに表示されます。 アプリがターミナル パネルで起動します。 HTTP によってトリガーされる関数の URL エンドポイントがローカルで実行されていることを確認できます。
-![functions-vscode-f5.png](images/functions-vscode-f5.png "functions-vscode-f5.png")
+    ![functions-vscode-f5.png](images/functions-vscode-f5.png "functions-vscode-f5.png")
 Windows での実行に問題がある場合、Visual Studio Code の既定のターミナルが WSL Bash に設定されていないことをご確認ください。
 
 2. Core Tools を実行したまま、**Azure: Functions** 領域に移動します。 [Functions] の [ローカル プロジェクト][Functions] を展開します。  関数を右クリック (Windows) または Ctrl キーを押しながらクリック (macOS) して、**[Execute Function Now]** (今すぐ関数を実行) を選択します。
-![execute-function-now.png](images/execute-function-now.png)
+    ![execute-function-now.png](images/execute-function-now.png)
 
 3. **[Enter request body]** (要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
 
@@ -67,7 +68,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 # Azure へのサインイン
 アプリを発行するには、Azure にサインインしておく必要があります。
 1. まだサインインしていない場合は、アクティビティ バーの Azure アイコンを選択し、 [Azure: Functions] 領域で、 **[Azure にサインイン...]** を選択します。
-![functions-sign-into-azure.png](images/functions-sign-into-azure.png)
+    ![functions-sign-into-azure.png](images/functions-sign-into-azure.png)
 既にサインインしている場合は、次のセクションに進んでください。
 
 2. ブラウザーでプロンプトが表示されたら、ご利用の Azure アカウントを選択し、その Azure アカウントの資格情報を使用してサインインします。
@@ -80,7 +81,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 **重要**: 既存の関数アプリに発行すると、Azure のそのアプリのコンテンツが上書きされます
 
 1. アクティビティ バーの Azure アイコンを選択し、 [Azure: Functions] 領域で、 **[Deploy to function app]** (関数アプリにデプロイ) ボタンを選択します。
-![function-app-publish-project.png](images/function-app-publish-project.png)
+    ![function-app-publish-project.png](images/function-app-publish-project.png)
 
 2. プロンプトで、次の情報を入力します。
 - Select folder (フォルダーを選択してください) : ワークスペースのフォルダーを選択するか、関数アプリが格納されているフォルダーを参照します。 既に有効な関数アプリが開いている場合には、このプロンプトは表示されません。
@@ -90,7 +91,7 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 - Select a location for new resources (新しいリソースの場所 (リージョン) を選択してください) : パフォーマンスを向上させるために、お近くの[リージョン](https://azure.microsoft.com/regions/) を選択してください。
 
 この拡張機能は、Azure に作成されている個々のリソースの状態を通知領域に表示します。
-![resource-notification.png](images/resource-notification.png)
+    ![resource-notification.png](images/resource-notification.png)
 
 3. 完了すると、関数アプリ名に基づく名前を使用して、次の Azure リソースがサブスクリプションに作成されます。
 - リソース グループ。関連リソースの論理コンテナーです。
@@ -104,12 +105,12 @@ Windows での実行に問題がある場合、Visual Studio Code の既定の�
 **ヒント**: 既定では、関数アプリに必要な Azure リソースが、指定した関数アプリ名に基づいて作成されます。 また、既定では、関数アプリを含んだ同じ新しいリソース グループがその作成先となります。 それらのリソースの名前をカスタマイズしたり、既存のリソースを再利用したりする場合は、高度な作成オプションを使用してプロジェクトを発行する必要があります。
 
 4. この通知の **[View Output]** (出力の表示) を選択すると、作成済みの Azure リソースなど、作成とデプロイの結果が表示されます。 通知を見逃した場合は、右下隅にあるベル アイコンを選択して、再度確認します。
-![function-create-notifications.png](images/function-create-notifications.png)
+    ![function-create-notifications.png](images/function-create-notifications.png)
 
 
 # Azure で関数を実行する
 1. [Azure: Functions] 領域 (サイド バー内) に戻り、サブスクリプション、新しい関数アプリ、 [関数] の順に展開します。  関数を右クリック (Windows) または Ctrl キーを押しながらクリック (macOS) して、**[Execute Function Now]** **(今すぐ関数を実行)** を選択します。
-![execute-function-now (1).png](images/execute-function-now%20(1).png)
+    ![execute-function-now (1).png](images/execute-function-now%20(1).png)
 
 2. **[Enter request body]** (要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
 
@@ -232,7 +233,7 @@ final HttpResponseMessage ret = new Function().run(req, msg, context);
 1. 前の記事と同様、F5 キーを押して関数アプリ プロジェクトと Core Tools を起動します。
 
 2. Core Tools を実行したまま、Azure: Functions 領域に移動します。 [Functions] の [ローカル プロジェクト][Functions] を展開します。 HttpExample 関数を右クリック (Mac では Ctrl キーを押しながらクリック) し、HttpExample を選択します。
-![execute-function-now (2).png](images/execute-function-now%20(2).png)
+    ![execute-function-now (2).png](images/execute-function-now%20(2).png)
 
 3. [Enter request body](要求本文を入力してください) に、要求メッセージ本文の値として が表示されます。 Enter キーを押して、この要求メッセージを関数に送信します。
 
@@ -243,9 +244,9 @@ final HttpResponseMessage ret = new Function().run(req, msg, context);
 # ストレージ エクスプローラーをアカウントに接続する
 既に Azure Storage Explorer をインストールして Azure アカウントに接続している場合は、このセクションをスキップしてください。
 1. Azure Storage Explorer ツールを実行し、左側の接続アイコンを選択して、 [アカウントの追加] を選択します。
-![storage-explorer-add-account.png](images/storage-explorer-add-account.png)
+    ![storage-explorer-add-account.png](images/storage-explorer-add-account.png)
 2. [接続] ダイアログで、 [Add an Azure account]\(Azure アカウントを追加する\) を選択し、お使いの Azure 環境を選択して、 [サインイン] を選択します。
-![storage-explorer-connect-azure-account.png](images/storage-explorer-connect-azure-account.png)
+    ![storage-explorer-connect-azure-account.png](images/storage-explorer-connect-azure-account.png)
 
 自分のアカウントへのサインインが成功すると、そのアカウントに関連付けられている Azure サブスクリプションがすべて表示されます。
 
@@ -255,7 +256,7 @@ final HttpResponseMessage ret = new Function().run(req, msg, context);
 2. [キュー] ノードを展開して、outqueue という名前のキューを選択します。
 
 このキューには、HTTP によってトリガーされる関数を実行したときにキューの出力バインディングが作成されたというメッセージが含まれます。 name の既定の name 値で関数を呼び出した場合、キュー メッセージは Name passed to the function: Azure です。
-![function-queue-storage-output-view-queue.png](images/function-queue-storage-output-view-queue.png)
+    ![function-queue-storage-output-view-queue.png](images/function-queue-storage-output-view-queue.png)
 
 3. 関数を再度実行し、別の要求を送信すると、キューに新しいメッセージが表示されます。
 
@@ -280,7 +281,7 @@ Azure では、"リソース" とは、関数アプリ、関数、ストレー�
 2. 関数アプリを選択し、Enter キーを押します。 その関数アプリのページが Azure portal で開きます。
 
 3. [概要] タブで、 [リソース グループ] の横にある名前付きリンクを選択します。
-![functions-app-delete-resource-group.png](images/function-app-publish-project.png)
+    ![functions-app-delete-resource-group.png](images/function-app-publish-project.png)
 
 4. [リソース グループ] ページで、含まれているリソースの一覧を確認し、削除するものであることを確認します。
 
